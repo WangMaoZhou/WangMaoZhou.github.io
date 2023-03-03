@@ -1,223 +1,77 @@
-<!doctype html>
-<html lang="zh-TW">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<!-- Fontawesome CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="style.css">
-		<title>我的個人網站</title>
-	</head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>你的名字 - 數據分析師</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-		<!-- 導覽列 -->
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="#">我的個人網站</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#home">首頁</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">關於我</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#services">服務</a>
-						</li>
-            <li class="nav-item">
-							<a class="nav-link" href="#portfolio">作品集</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#experience">經歷</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">聯絡我</a>
-						</li>
-					</ul>
-				</div>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">你的名字</span></h1>
 			</div>
-		</nav>
-		
-		<!-- 首頁 -->
-		<section id="home" class="jumbotron jumbotron-fluid">
-			<div class="container">
-				<h1 class="display-4">歡迎來到我的個人網站</h1>
-				<p class="lead">我是一名數據分析師，熱愛數據科學和人工智慧技術。</p>
-				<a class="btn btn-primary btn-lg" href="#contact" role="button">聯絡我</a>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">首頁</a></li>
+					<li><a href="about.html">關於我</a></li>
+					<li><a href="contact.html">聯絡我</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section id="showcase">
+		<div class="container">
+			<h1>歡迎來到我的個人網頁</h1>
+			<p>我是一名數據分析師，致力於為企業提供數據分析和解決方案。</p>
+		</div>
+	</section>
+
+	<section id="services">
+		<div class="container">
+			<h1>我的服務</h1>
+			<p>我能為您提供以下服務：</p>
+			<ul>
+				<li>數據分析和建模</li>
+				<li>數據可視化</li>
+				<li>報告和演示</li>
+				<li>數據清理和處理</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h1>關於我</h1>
+			<p>我是一名數據分析師，具有豐富的數據分析和建模經驗。我熟悉Python，R和SQL等常見的數據分析工具，並擅於數據可視化和報告方面的工作。我非常熱愛數據分析，並希望能夠為您的企業提供幫助。</p>
+</div>
+</section>
+	<section id="contact">
+	<div class="container">
+		<h1>聯絡我</h1>
+		<form>
+			<div class="form-group">
+				<label>姓名</label>
+				<input type="text" placeholder="請輸入您的姓名">
 			</div>
-		</section>
-		<!-- 關於我 -->
-		<section id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h2 class="mb-4">關於我</h2>
-						<p>我是一名數據分析師，對數據科學和人工智慧技術充滿熱情。我熟練掌握Python和R語言，並具有豐富的數據處理和數據分析經驗。</p>
-						<p>我畢業於某某大學數據科學專業，曾在某某公司擔任數據分析師，負責為客戶提供數據分析和報告撰寫服務。</p>
-						<a class="btn btn-outline-primary" href="#portfolio">查看我的作品集</a>
-					</div>
-					<div class="col-md-6">
-						<img class="img-fluid" src="img/about-me.png" alt="關於我">
-					</div>
-				</div>
+			<div class="form-group">
+				<label>電子郵件</label>
+				<input type="email" placeholder="請輸入您的電子郵件">
 			</div>
-		</section>
-		<!-- 作品集 -->
-		<section id="portfolio">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="mb-4">作品集</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="card-img-top" src="img/portfolio-1.png" alt="作品集1">
-							<div class="card-body">
-								<h5 class="card-title">作品集1</h5>
-								<p class="card-text">這是我的作品集1的描述。</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<a href="#" class="btn btn-sm btn-outline-secondary">查看</a>
-									</div>
-									<small class="text-muted">2022年2月</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="card-img-top" src="img/portfolio-2.png" alt="作品集2">
-							<div class="card-body">
-								<h5 class="card-title">作品集2</h5>
-								<p class="card-text">這是我的作品集2的描述。</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<a href="#" class="btn btn-sm btn-outline-secondary">查看</a>
-									</div>
-									<small class="text-muted">2021年12月</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="card-img-top" src="img/portfolio-3.png" alt="作品集3">
-							<div class="card-body">
-								<h5 class="card-title">作品集3</h5>
-								<p class="card-text">這是我的作品集3的描述。</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<a href="#" class="btn btn-sm btn-outline-secondary">查看</a>
-									</div>
-									<small class="text-muted">2021年10月</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="card-img-top" src="img/portfolio-4.png" alt="作品集4">
-							<div class="card-body">
-								<h5 class="card-title">作品集4</h5>
-								<p class="card-text">這是我的作品集4的描述。</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<a href="#" class="btn btn-sm btn-outline-secondary">查看</a>
-									</div>
-									<small class="text-muted">2021年8月</small>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="form-group">
+				<label>消息</label>
+				<textarea placeholder="請輸入您的消息"></textarea>
 			</div>
-		</section>
+			<button type="submit" class="button_1">發送</button>
+		</form>
+	</div>
+</section>
 
-		<!-- 聯繫我們 -->
-		<section id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="mb-4">聯繫我們</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-8">
-						<form>
-							<div class="form-group">
-								<label for="name">姓名</label>
-								<input type="text" class="form-control" id="name" placeholder="請輸入姓名">
-							</div>
-							<div class="form-group">
-								<label for="email">電子郵件</label>
-								<input type="email" class="form-control" id="email" placeholder="請輸入電子郵件">
-							</div>
-							<div class="form-group">
-								<label for="message">消息</label>
-								<textarea class="form-control" id="message" rows="5" placeholder="請輸入消息"></textarea>
-							</div>
-							<button type="submit" class="btn btn-primary">發送</button>
-						</form>
-					</div>
-					<div class="col-md-4">
-						<h3>聯繫方式</h3>
-						<p class="mb-4">如果您有任何問題或建議，歡迎通過以下方式聯繫我們：</p>
-						<ul class="list-unstyled">
-							<li><i class="fa fa-map-marker"></i> 台灣</li>
-							<li><i class="fa fa-phone"></i> +886 123-456-7890</li>
-							<li><i class="fa fa-envelope"></i> info@example.com</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer class="py-5 bg-dark">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<p class="mb-0">
-							<a href="#top" class="scrolltop">返回頂部</a>
-						</p>
-						<p class="mb-0">
-							版權所有 © 2023 數據分析師.
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-		<!-- Plugin JavaScript -->
-		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<!-- Custom scripts for this template -->
-		<script src="js/creative.min.js"></script>
-		<script src="js/custom.js"></script>
-
-		<!-- Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'GA_MEASUREMENT_ID');
-		</script>
-
-	</body>
+<footer>
+	<div class="container">
+		<p>&copy; 2023 - 你的名字</p>
+	</div>
+</footer>
+</body>
 </html>
