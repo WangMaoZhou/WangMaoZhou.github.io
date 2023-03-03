@@ -1,162 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Data Analysis Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 引入 Bootstrap 的 CSS 文件 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-m/LkthjKPCe80Mw55Kj/3/cDK8mxJWujT2xNgytRZL9N8pNozTvKNvP+AMRO/kULjB68IT4e4Jzyv1MKmB1LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- 引入 Font Awesome 的 CSS 文件 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Ucso9QkYzS8BNfJ95pg1u+6y2e7P5oHPTxV7U5NV6ctJJY6Hd/kMry+0PbkAIfv0F9bWzm+V7POZ5gOpyV7RAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- 自定義的 CSS 文件 -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my Personal Website</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="bg-dark text-center text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3">
-          <h1>John Doe</h1>
-          <p class="lead">
-<!-- Social Media Icons -->
-                  <div class="d-flex justify-content-center">
-        <a href="#"><i class="fab fa-linkedin fa-2x mx-3"></i></a>
-        <a href="#"><i class="fab fa-github fa-2x mx-3"></i></a>
-        <a href="#"><i class="fab fa-twitter fa-2x mx-3"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-</header>
-  <!-- Portfolio -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <h2 class="text-center mb-5">Portfolio</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="project1.jpg" alt="Project 1" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada eleifend felis, vitae sollicitudin nunc dapibus eu.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="project2.jpg" alt="Project 2" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada eleifend felis, vitae sollicitudin nunc dapibus eu.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="project3.jpg" alt="Project 3" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Project 3</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada eleifend felis, vitae sollicitudin nunc dapibus eu.</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Experience -->
-  <section class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <h2 class="text-center mb-5">Experience</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Data Analyst</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada eleifend felis, vitae sollicitudin nunc dapibus eu.</p>
-              <p class="card-text"><small class="text-muted">
- XYZ Company</small></p>
-</div>
-</div>
-</div>
-<div class="col-md-4 mb-4">
-<div class="card">
-<div class="card-body">
-<h5 class="card-title">Data Scientist</h5>
-<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada eleifend felis, vitae sollicitudin nunc dapibus eu.</p>
-<p class="card-text"><small class="text-muted">ABC Corporation</small></p>
-</div>
-</div>
-</div>
-<div class="col-md-4 mb-4">
-<div class="card">
-<div class="card-body">
-<h5 class="card-title">Data Engineer</h5>
-<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada eleifend felis, vitae sollicitudin nunc dapibus eu.</p>
-<p class="card-text"><small class="text-muted">123 Inc.</small></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="d-flex justify-content-center">
-            <img src="profile.jpg" alt="Profile Picture" class="rounded-circle me-3" width="60">
-            <h4 class="my-auto">Your Name</h4>
-          </div>
-          <div class="d-flex justify-content-center mt-3">
-            <a href="#"><i class="fab fa-linkedin fa-2x mx-3"></i></a>
-            <a href="#"><i class="fab fa-github fa-2x mx-3"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x mx-3"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Bootstrap core JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am a software engineer with 2 years of experience. I enjoy coding, reading, and hiking.</p>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
+        <article>
+          <h3>Company A</h3>
+          <p>Software Engineer, 2019 - present</p>
+          <ul>
+            <li>Developed a new feature for the company's flagship product</li>
+            <li>Collaborated with the QA team to fix bugs</li>
+            <li>Implemented new design elements for the UI</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Company B</h3>
+          <p>Software Intern, 2018</p>
+          <ul>
+            <li>Assisted with software development projects</li>
+            <li>Tested company's products and services</li>
+            <li>Contributed to documentation and training materials</li>
+          </ul>
+        </article>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Programming languages: Java, Python, C++</li>
+          <li>Web development: HTML, CSS, JavaScript</li>
+          <li>Frameworks: React, Spring, Django</li>
+          <li>Tools: Git, Eclipse, Visual Studio Code</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </fieldset>
+          <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </fieldset>
+          <fieldset>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2021 My Personal Website</p>
+    </footer>
+  </body>
 </html>
