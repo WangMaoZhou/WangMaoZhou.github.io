@@ -1,79 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Personal Website</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to my Personal Website</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am a software engineer with 2 years of experience. I enjoy coding, reading, and hiking.</p>
-      </section>
-      <section id="experience">
-        <h2>Experience</h2>
-        <article>
-          <h3>Company A</h3>
-          <p>Software Engineer, 2019 - present</p>
-          <ul>
-            <li>Developed a new feature for the company's flagship product</li>
-            <li>Collaborated with the QA team to fix bugs</li>
-            <li>Implemented new design elements for the UI</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Company B</h3>
-          <p>Software Intern, 2018</p>
-          <ul>
-            <li>Assisted with software development projects</li>
-            <li>Tested company's products and services</li>
-            <li>Contributed to documentation and training materials</li>
-          </ul>
-        </article>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的個人網站</title>
+  <!-- 引入 CSS 檔案 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 Google Fonts 字型 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <!-- 引入 Font Awesome 圖示 -->
+  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 封面 -->
+  <header class="cover">
+    <div class="container">
+      <h1>姓名</h1>
+      <p>數據分析師</p>
+    </div>
+  </header>
+  
+  <!-- 主要內容區塊 -->
+  <main class="content">
+    <!-- 關於我 -->
+    <section id="about">
+      <div class="container">
+        <h2>關於我</h2>
+        <img src="profile.jpg" alt="大頭貼">
+        <p>我是一位熱愛數據分析的人，喜歡探索數據背後的故事，以及如何利用數據為企業帶來價值。我對數據可視化、統計分析等方面有深入的了解，並且熟練使用 Python 和 SQL 等工具進行數據處理和分析。</p>
+      </div>
+    </section>
+    
+    <!-- 技能 -->
+    <section id="skills">
+      <div class="container">
+        <h2>技能</h2>
         <ul>
-          <li>Programming languages: Java, Python, C++</li>
-          <li>Web development: HTML, CSS, JavaScript</li>
-          <li>Frameworks: React, Spring, Django</li>
-          <li>Tools: Git, Eclipse, Visual Studio Code</li>
+          <li><i class="fas fa-check"></i>Python</li>
+          <li><i class="fas fa-check"></i>SQL</li>
+          <li><i class="fas fa-check"></i>Tableau</li>
+          <li><i class="fas fa-check"></i>Pandas</li>
+          <li><i class="fas fa-check"></i>NumPy</li>
         </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <fieldset>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </fieldset>
-          <fieldset>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </fieldset>
-          <fieldset>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button type="submit">Send Message</button>
-          </fieldset>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2021 My Personal Website</p>
-    </footer>
-  </body>
+      </div>
+    </section>
+    
+    <!-- 作品集 -->
+    <section id="portfolio">
+      <div class="container">
+        <h2>作品集</h2>
+        <div class="portfolio-item">
+          <img src="portfolio-1.jpg" alt="作品 1">
+          <h3>作品 </h3>
+          <p>這是作品 1 的說明文字</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="portfolio-2.jpg" alt="作品 2">
+          <h3>作品 2</h3>
+          <p>這是作品 2 的說明文字</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="portfolio-3.jpg" alt="作品 3">
+          <h3>作品 3</h3>
+          <p>這是作品 3 的說明文字</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 經歷 -->
+    <section id="experience">
+      <div class="container">
+        <h2>經歷</h2>
+        <ul>
+          <li>
+            <h3>公司 A</h3>
+            <p>數據分析師</p>
+            <p>2020 年 1 月至今</p>
+          </li>
+          <li>
+            <h3>公司 B</h3>
+            <p>數據分析實習生</p>
+            <p>2019 年 7 月至 2019 年 12 月</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- 聯繫資訊 -->
+    <section id="contact">
+      <div class="container">
+        <h2>聯繫資訊</h2>
+        <ul>
+          <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-line"></i> Line</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    <div class="container">
+      <p>© 2023 My Name</p>
+    </div>
+  </footer>
+  
+  <!-- 引入 JavaScript 檔案 -->
+  <script src="main.js"></script>
+</body>
+
 </html>
