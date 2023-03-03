@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Data Science Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script>
+		// 数据可视化
+		var data = [
+			{ project: "Project A", skills: ["Python", "Data Cleaning", "Data Analysis", "Visualization"], value: 8 },
+			{ project: "Project B", skills: ["R", "Machine Learning", "Data Visualization"], value: 7 },
+			{ project: "Project C", skills: ["SQL", "Data Modeling", "ETL"], value: 6 },
+			{ project: "Project D", skills: ["Data Mining", "Tableau", "Reporting"], value: 8 },
+			{ project: "Project E", skills: ["Data Science Workflow", "Jupyter Notebooks", "Github"], value: 9 }
+		];
+
+		var svg = d3.select("#chart")
+			.append("svg")
+			.attr("width", "100%")
+			.attr("height", 500);
+
+		var xScale = d3.scaleBand()
+			.domain(data.map(function(d) { return d.project; }))
+			.range([0, svg.attr("width")])
+			.paddingInner(0.1)
+			.paddingOuter(0.5);
+
+		var yScale = d3.scaleLinear()
+			.domain([0, d3.max(data, function(d) { return d.value; })])
+			.range([0, svg.attr("height") - 50]);
+
+		svg.selectAll("rect")
+			.data(data)
+			.enter()
+			.append("rect")
+			.attr("x", function(d) { return xScale(d.project); })
+			.attr("y", function(d) { return svg.attr("height") - yScale(d.value); })
+			.attr("width", xScale.bandwidth())
+			.attr("height", function(d) { return yScale(d.value); })
+			.attr("fill", "#007bff");
+
+		svg.selectAll("text")
+			.data(data)
+			.enter()
+			.append("text")
+			.text(function(d) { return d.project; })
+			.attr("x", function(d) { return xScale(d.project) + xScale.bandwidth() / 2; })
+			.attr("y", function(d) { return svg.attr("height") - 10; })
+			.attr("text-anchor", "middle");
+
+		// 技能标签
+		var skills = data.map(function(d) { return d.skills; })
+			.reduce(function(a, b) { return a.concat(b); })
+			.filter(function(d, i, arr) { return arr.indexOf(d) === i; });
+
+		d3.select("#skills")
+			.selectAll("span")
+			.data(skills)
+			.enter()
+    		.append("span")
+		.text(function(d) { return d; })
+		.attr("class", "badge badge-primary m-1");
+</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">My Data Science Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Welcome to My Data Science Portfolio</h1>
+				<p>Here you will find a showcase of my data science projects and skills.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Projects</h2>
+				<div id="chart"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Skills</h2>
+				<div id="skills"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>About Me</h2>
+				<p>My name is John Doe, and I am a data scientist with experience in Python, R, SQL, and Tableau. I have worked on projects involving data cleaning, data analysis, machine learning, data modeling, and data visualization.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+		
