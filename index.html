@@ -1,89 +1,73 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>個人網站</title>
-	<link rel="stylesheet" href="style.css">
+  <title>My Data Analyst Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<img src="avatar.jpg" alt="大頭貼">
-			<h1>姓名</h1>
-			<h2>數據分析師</h2>
-			<nav>
-				<ul>
-					<li><a href="#about-me">關於我</a></li>
-					<li><a href="#portfolio">作品集</a></li>
-					<li><a href="#experience">經歷</a></li>
-					<li><a href="#skills">技術</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<main>
-		<section id="about-me">
-			<div class="container">
-				<h2>關於我</h2>
-				<p>你好，我是一名數據分析師，擁有豐富的數據處理和分析經驗。對於大數據的探索和分析具有強烈的興趣，熟悉 Python、SQL、Tableau 等工具，有著豐富的數據分析實戰經驗。</p>
-			</div>
-		</section>
-		<section id="portfolio">
-			<div class="container">
-				<h2>作品集</h2>
-				<div class="project">
-					<img src="project1.jpg" alt="作品集">
-					<h3>項目標題</h3>
-					<p>項目簡介</p>
-				</div>
-				<div class="project">
-					<img src="project2.jpg" alt="作品集">
-					<h3>項目標題</h3>
-					<p>項目簡介</p>
-				</div>
-				<a href="#" class="button">查看更多作品</a>
-			</div>
-		</section>
-		<section id="experience">
-			<div class="container">
-				<h2>經歷</h2>
-				<ul>
-					<li>
-						<h3>公司名稱</h3>
-						<p>2018年-至今</p>
-						<p>數據分析師</p>
-					</li>
-					<li>
-						<h3>公司名稱</h3>
-						<p>2016年-2018年</p>
-						<p>數據分析實習生</p>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<section id="skills">
-		<div class="container">
-			<h2>技術</h2>
-			<ul>
-				<li>Python</li>
-				<li>SQL</li>
-				<li>Tableau</li>
-				<li>Pandas</li>
-				<li>NumPy</li>
-			</ul>
-		</div>
-	</section>
-</main>
-<footer>
-	<div class="container">
-		<ul>
-			<li><a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.svg" alt="Linkedin"></a></li>
-			<li><a href="https://www.instagram.com/" target="_blank"><img src="instagram.svg" alt="Instagram"></a></li>
-			<li><a href="https://line.me/zh-hant/" target="_blank"><img src="line.svg" alt="Line"></a></li>
-		</ul>
-		<p>&copy; 2023 姓名</p>
-	</div>
-</footer>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">My Website</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to my website</h1>
+    <p>This is a website created by me.</p>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>My Skills</h3>
+      <ul>
+        <li>Python</li>
+        <li>R</li>
+        <li>SQL</li>
+        <li>Data Visualization</li>
+        <li>Machine Learning</li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h3>My Work</h3>
+      <ul>
+        <li><a href="#">Project 1</a></li>
+        <li><a href="#">Project 2</a></li>
+        <li><a href="#">Project 3</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-4">
+      <h3>Connect with Me</h3>
+      <ul class="list-unstyled">
+        <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Add font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </body>
 </html>
