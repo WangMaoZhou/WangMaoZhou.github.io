@@ -1,111 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Data Science Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Facebook Home Page Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<style>
-		.chart {
-			width: 100%;
-			height: 500px;
+		#sidebar {
+			background-color: #f5f6f7;
+			border-right: 1px solid #dfe3ee;
 		}
-		.bar {
-			fill: steelblue;
+		#content {
+			padding: 20px;
 		}
-		.bar:hover {
-			fill: orange;
+		.card {
+			margin-bottom: 20px;
 		}
-		.axis {
-			font-size: 12px;
+		.card-header {
+			background-color: #f5f6f7;
+			border-bottom: 1px solid #dfe3ee;
+			padding: 10px;
 		}
-		.axis path,
-		.axis line {
-			fill: none;
-			stroke: black;
-			shape-rendering: crispEdges;
+		.card-body {
+			padding: 10px;
 		}
-		.x.axis path {
-			display: none;
+		.card-title {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.card-subtitle {
+			color: #999;
+			margin-bottom: 10px;
+		}
+		.card-text {
+			margin-bottom: 10px;
+		}
+		.post-input {
+			border: none;
+			box-shadow: none;
+			resize: none;
 		}
 	</style>
-	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script>
-		var dataset = [5, 10, 15, 20, 25];
-
-		var svgWidth = 500;
-		var svgHeight = 300;
-		var barPadding = 5;
-
-		var barWidth = (svgWidth / dataset.length);
-
-		var svg = d3.select('#chart')
-					.append('svg')
-					.attr('width', svgWidth)
-					.attr('height', svgHeight);
-
-		var yScale = d3.scaleLinear()
-						.domain([0, d3.max(dataset)])
-						.range([0, svgHeight - 20]);
-
-		var barChart = svg.selectAll('rect')
-							.data(dataset)
-							.enter()
-							.append('rect')
-							.attr('y', function(d) {
-								return svgHeight - yScale(d);
-							})
-							.attr('height', function(d) {
-								return yScale(d);
-							})
-							.attr('width', barWidth - barPadding)
-							.attr('transform', function (d, i) {
-									var translate = [barWidth * i, 0];
-									return 'translate(' + translate + ')';
-							})
-							.attr('class', 'bar');
-
-		var xScale = d3.scaleBand()
-						.domain(d3.range(dataset.length))
-						.range([0, svgWidth]);
-
-		var xAxis = d3.axisBottom(xScale);
-
-		svg.append('g')
-			.attr('class', 'axis')
-			.attr('transform', 'translate(0,' + (svgHeight - 20) + ')')
-			.call(xAxis);
+		$(document).ready(function() {
+			$('#post-button').click(function() {
+				var postText = $('#post-input').val();
+				if (postText !== '') {
+					var postHtml = '<div class="card">' +
+										'<div class="card-header">' +
+											'<img src="https://via.placeholder.com/50x50" class="rounded-circle mr-2" />' +
+											'<span class="font-weight-bold">John Doe</span>' +
+											'<span class="ml-2">2 hours ago</span>' +
+										'</div>' +
+										'<div class="card-body">' +
+											'<p class="card-text">' + postText + '</p>' +
+										'</div>' +
+									'</div>';
+					$('#post-list').prepend(postHtml);
+					$('#post-input').val('');
+				}
+			});
+		});
 	</script>
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1>Welcome to My Data Science Portfolio</h1>
-				<p>Here you will find a showcase of my data science projects and skills.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<h2>Projects</h2>
-				<div id="chart" class="chart"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<h2>Skills</h2>
-				<div class="badge badge-primary m-1">Python</div>
-				<div class="badge badge-primary m-1">R</div>
-				<div class="badge badge-primary m-1">SQL</div>
-			
-			<div class="badge badge-primary m-1">Tableau</div>
-			<div class="badge badge-primary m-1">Machine Learning</div>
-			<div class="badge badge-primary m-1">Data Visualization</div>
-		</div>
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<a class="navbar-brand" href="#">Facebook</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Messages</a>
+				</li>
+			</ul>
+		<form class="form-inline ml-auto">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
 	</div>
+</nav>
+<div class="container-fluid mt-3">
 	<div class="row">
-		<div class="col-sm-12">
-			<h2>About Me</h2>
-			<p>My name is Jane Doe, and I am a data scientist with experience in Python, R, SQL, and Tableau. I have worked on projects involving data cleaning, data analysis, machine learning, data modeling, and data visualization.</p>
+		<div class="col-md-3" id="sidebar">
+			<h4>John Doe</h4>
+			<p><i class="fas fa-briefcase"></i> Data Scientist</p>
+			<p><i class="fas fa-graduation-cap"></i> University of California, Berkeley</p>
+			<p><i class="fas fa-home"></i> San Francisco, CA</p>
+			<p><i class="fas fa-heart"></i> Single</p>
+		</div>
+		<div class="col-md-9" id="content">
+			<div class="card">
+				<div class="card-header">
+					<img src="https://via.placeholder.com/50x50" class="rounded-circle mr-2" />
+					<span class="font-weight-bold">John Doe</span>
+					<span class="ml-2">2 hours ago</span>
+				</div>
+				<div class="card-body">
+					<p class="card-text">This is my first post on Facebook!</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<img src="https://via.placeholder.com/50x50" class="rounded-circle mr-2" />
+					<span class="font-weight-bold">Jane Doe</span>
+					<span class="ml-2">1 hour ago</span>
+				</div>
+				<div class="card-body">
+					<p class="card-text">Welcome to Facebook, John!</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<img src="https://via.placeholder.com/50x50" class="rounded-circle mr-2" />
+					<span class="font-weight-bold">John Doe</span>
+					<span class="ml-2">30 minutes ago</span>
+				</div>
+				<div class="card-body">
+					<p class="card-text">This is my second post on Facebook!</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<img src="https://via.placeholder.com/50x50" class="rounded-circle mr-2" />
+					<span class="font-weight-bold">Jane Doe</span>
+					<span class="ml-2">10 minutes ago</span>
+				</div>
+				<div class="card-body">
+					<p class="card-text">I love Facebook!</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<img src="https://via.placeholder.com/50x50" class="rounded-circle mr-2" />
+					<span class="font-weight-bold">John Doe</span>
+					<span class="ml-2">1 minute ago</span>
+				</div>
+				<div class="card-body">
+					<p class="card-text">This is my third post on Facebook!</p>
+				</div>
+			</div>
+			<div class="card">
+								<div class="card-body">
+					<form>
+						<div class="form-group">
+							<textarea class="form-control post-input" id="post-input" rows="3" placeholder="What's on your mind?"></textarea>
+						</div>
+						<button type="button" class="btn btn-primary" id="post-button">Post</button>
+					</form>
+				</div>
+			</div>
+			<div id="post-list"></div>
 		</div>
 	</div>
 </div>
