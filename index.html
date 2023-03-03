@@ -1,106 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>數據分析師個人網站</title>
-	<!-- 引入 Bootstrap 的 CSS 文件 -->
-	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-	<!-- 引入 Font Awesome 的 CSS 文件 -->
-	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>數據分析師個人網站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-6dznT9LidOCz2+RbGJf1hO7N8qegilx/7uh+MvZJWln9aQzG2R+RnABe1kLdk8h3q3qKj+1vRKJlIsW8b4s4sA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-zW0y33i0ouqHrjvra+ZixziXgM3uqC/5eYBbSDjV8huINoQiO7VhRvOtZ1cOZjOLanAQkiIzgjj2yFaYfzCxiA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<!-- 頁面頂部區域 -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
-			<a class="navbar-brand" href="#">數據分析師</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">關於我</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">作品展示</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">聯絡我</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">數據分析師</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">主頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">作品展示</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聯繫我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<!-- 頁面主要內容區域 -->
-	<div class="container my-5">
-		<div class="row">
-			<div class="col-md-6">
-				<img src="https://via.placeholder.com/400x400" alt="數據分析師頭像" class="img-fluid rounded-circle">
-			</div>
-			<div class="col-md-6">
-				<h1>你好，我是mz</h1>
-				<p>我是一位數據分析師，擁有豐富的數據分析和可視化經驗。我的專業知識包括 Python 編程、數據庫管理、統計分析、機器學習等方面。</p>
-				<p>如果你有任何關於數據分析的問題或需求，歡迎聯繫我，我會盡力提供協助。</p>
-				<a href="#" class="btn btn-primary">聯絡我</a>
-			</div>
-		</div>
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">數據分析師</div>
+                <div class="intro-lead-in">讓數據為你服務</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#">了解更多</a>
+            </div>
+        </div>
+    </header>
 
-		<hr>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg
+                <div class="section-heading">
+                    <h2>關於我們</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="text-muted">我們是一支專業的數據分析團隊，提供數據分析、數據建模、數據視覺化等服務。</p>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-muted">我們有豐富的數據分析經驗，擅長使用 Python、R、SQL 等工具進行數據處理與分析。</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<h2 class="my-5">我的作品展示</h2>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card">
-					<img src="https://via.placeholder.com/400x300" class="card-img-top" alt="作品1">
-<div class="card-body">
-<h5 class="card-title">作品1</h5>
-<p class="card-text">這是我完成的一個數據分析項目，主要涉及某電商平台的銷售數據分析和預測。</p>
-<a href="#" class="btn btn-primary">詳細信息</a>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-<img src="https://via.placeholder.com/400x300" class="card-img-top" alt="作品2">
-<div class="card-body">
-<h5 class="card-title">作品2</h5>
-<p class="card-text">這是我完成的一個數據可視化項目，主要展示了某城市的交通流量情況。</p>
-<a href="#" class="btn btn-primary">詳細信息</a>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-<img src="https://via.placeholder.com/400x300" class="card-img-top" alt="作品3">
-<div class="card-body">
-<h5 class="card-title">作品3</h5>
-<p class="card-text">這是我完成的一個機器學習項目，主要針對某個行業的客戶進行了客戶關係管理分析和預測。</p>
-<a href="#" class="btn btn-primary">詳細信息</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- 頁面底部區域 -->
-<footer class="bg-light py-3">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<p>版權所有 © 2023 數據分析師</p>
-			</div>
-			<div class="col-md-6 text-right">
-				<a href="#" class="mx-3"><i class="fab fa-facebook fa-lg"></i></a>
-				<a href="#" class="mx-3"><i class="fab fa-twitter fa-lg"></i></a>
-				<a href="#" class="mx-3"><i class="fab fa-github fa-lg"></i></a>
-			</div>
-		</div>
-	</div>
+<section id="portfolio" class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>作品展示</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" href="#">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>作品標題</h4>
+                        <p class="text-muted">作品描述</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" href="#">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>作品標題</h4>
+                        <p class="text-muted">作品描述</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" href="#">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>作品標題</h4>
+                        <p class="text-muted">作品描述</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <
+<h2>聯繫我們</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form id="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="電子郵件" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="留言內容" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">提交</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>地址: 台灣</p>
+                        <p><i class="fas fa-phone"></i>電話: +886 9xxxxxxxx</p>
+                        <p><i class="fas fa-envelope"></i>電子郵件: example@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+						     <!-- Footer -->
+<footer class="bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center">&copy; 2023 數據分析團隊. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<!-- 引入 jQuery 和 Bootstrap 的 JS 文件 -->
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-<!-- 引入 Font Awesome 的 JS 文件 -->
-<script src="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
