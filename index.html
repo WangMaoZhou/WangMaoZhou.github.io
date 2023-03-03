@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>D3.js Bar Chart Example</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<title>My Data Science Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<style>
+		.chart {
+			width: 100%;
+			height: 500px;
+		}
 		.bar {
 			fill: steelblue;
 		}
@@ -25,8 +28,7 @@
 			display: none;
 		}
 	</style>
-</head>
-<body>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
 	<script>
 		var dataset = [5, 10, 15, 20, 25];
 
@@ -36,7 +38,7 @@
 
 		var barWidth = (svgWidth / dataset.length);
 
-		var svg = d3.select('body')
+		var svg = d3.select('#chart')
 					.append('svg')
 					.attr('width', svgWidth)
 					.attr('height', svgHeight);
@@ -73,5 +75,39 @@
 			.attr('transform', 'translate(0,' + (svgHeight - 20) + ')')
 			.call(xAxis);
 	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Welcome to My Data Science Portfolio</h1>
+				<p>Here you will find a showcase of my data science projects and skills.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Projects</h2>
+				<div id="chart" class="chart"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Skills</h2>
+				<div class="badge badge-primary m-1">Python</div>
+				<div class="badge badge-primary m-1">R</div>
+				<div class="badge badge-primary m-1">SQL</div>
+			
+			<div class="badge badge-primary m-1">Tableau</div>
+			<div class="badge badge-primary m-1">Machine Learning</div>
+			<div class="badge badge-primary m-1">Data Visualization</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>About Me</h2>
+			<p>My name is Jane Doe, and I am a data scientist with experience in Python, R, SQL, and Tableau. I have worked on projects involving data cleaning, data analysis, machine learning, data modeling, and data visualization.</p>
+		</div>
+	</div>
+</div>
 </body>
 </html>
