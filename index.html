@@ -1,83 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+	<title>個人網站</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
-		</nav>
-		<h1>My Portfolio</h1>
-		<p>I'm a data analyst with a passion for technology.</p>
-		<a href="#" class="button">Hire me</a>
+		<div class="container">
+			<img src="avatar.jpg" alt="大頭貼">
+			<h1>姓名</h1>
+			<h2>數據分析師</h2>
+			<nav>
+				<ul>
+					<li><a href="#about-me">關於我</a></li>
+					<li><a href="#portfolio">作品集</a></li>
+					<li><a href="#experience">經歷</a></li>
+					<li><a href="#skills">技術</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
-		<section class="about">
-			<h2>About Me</h2>
-			<p>My name is John Doe and I'm a data analyst with over 5 years of experience. I specialize in using data to drive business decisions and improve organizational performance.</p>
-			<p>My technical skills include data analysis, data visualization, statistical modeling, and programming in R and Python. I'm also familiar with SQL and NoSQL databases, as well as cloud computing platforms such as AWS and GCP.</p>
-			<a href="#" class="button">Learn more</a>
+		<section id="about-me">
+			<div class="container">
+				<h2>關於我</h2>
+				<p>你好，我是一名數據分析師，擁有豐富的數據處理和分析經驗。對於大數據的探索和分析具有強烈的興趣，熟悉 Python、SQL、Tableau 等工具，有著豐富的數據分析實戰經驗。</p>
+			</div>
 		</section>
-		<section class="services">
-			<h2>My Services</h2>
-			<ul>
-				<li>Data analysis and visualization</li>
-				<li>Statistical modeling and hypothesis testing</li>
-				<li>Data cleaning and preprocessing</li>
-				<li>Machine learning and predictive modeling</li>
+		<section id="portfolio">
+			<div class="container">
+				<h2>作品集</h2>
+				<div class="project">
+					<img src="project1.jpg" alt="作品集">
+					<h3>項目標題</h3>
+					<p>項目簡介</p>
+				</div>
+				<div class="project">
+					<img src="project2.jpg" alt="作品集">
+					<h3>項目標題</h3>
+					<p>項目簡介</p>
+				</div>
+				<a href="#" class="button">查看更多作品</a>
+			</div>
+		</section>
+		<section id="experience">
+			<div class="container">
+				<h2>經歷</h2>
+				<ul>
+					<li>
+						<h3>公司名稱</h3>
+						<p>2018年-至今</p>
+						<p>數據分析師</p>
+					</li>
+					<li>
+						<h3>公司名稱</h3>
+						<p>2016年-2018年</p>
+						<p>數據分析實習生</p>
+				</li>
 			</ul>
-			<a href="#" class="button">Get in touch</a>
-		</section>
-		<section class="portfolio">
-			<h2>My Portfolio</h2>
-			<div class="portfolio-grid">
-				<div class="portfolio-item">
-					<img src="https://via.placeholder.com/300" alt="Portfolio Item">
-					<h3>Project Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla nunc vitae velit varius aliquet. Morbi lacinia blandit est, nec malesuada ipsum eleifend vel.</p>
-				</div>
-				<div class="portfolio-item">
-					<img src="https://via.placeholder.com/300" alt="Portfolio Item">
-					<h3>Project Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla nunc vitae velit varius aliquet. Morbi lacinia blandit est, nec malesuada ipsum eleifend vel.</p>
-				</div>
-				<div class="portfolio-item">
-					<img src="https://via.placeholder.com/300" alt="Portfolio Item">
-					<h3>Project Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla nunc vitae velit varius aliquet. Morbi lacinia blandit est, nec malesuada ipsum eleifend vel.</p>
-				</div>
-				<div class="portfolio-item">
-					<img src="https://via.placeholder.com/300" alt="Portfolio Item">
-<h3>Project Title</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla nunc vitae velit varius aliquet. Morbi lacinia blandit est, nec malesuada ipsum eleifend vel.</p>
-</div>
-</div>
-<a href="#" class="button">View all projects</a>
-</section>
-<section class="contact">
-<h2>Contact Me</h2>
-<form>
-<label for="name">Name</label>
-<input type="text" id="name" name="name">
-<label for="email">Email</label>
-<input type="email" id="email" name="email">
-<label for="message">Message</label>
-<textarea id="message" name="message"></textarea>
-<input type="submit" value="Send Message">
-</form>
-</section>
+		</div>
+	</section>
+	<section id="skills">
+		<div class="container">
+			<h2>技術</h2>
+			<ul>
+				<li>Python</li>
+				<li>SQL</li>
+				<li>Tableau</li>
+				<li>Pandas</li>
+				<li>NumPy</li>
+			</ul>
+		</div>
+	</section>
 </main>
 <footer>
-<p>© 2023 My Portfolio. All rights reserved.</p>
+	<div class="container">
+		<ul>
+			<li><a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.svg" alt="Linkedin"></a></li>
+			<li><a href="https://www.instagram.com/" target="_blank"><img src="instagram.svg" alt="Instagram"></a></li>
+			<li><a href="https://line.me/zh-hant/" target="_blank"><img src="line.svg" alt="Line"></a></li>
+		</ul>
+		<p>&copy; 2023 姓名</p>
+	</div>
 </footer>
-</body>
-</html>
+
