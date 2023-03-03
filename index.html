@@ -1,180 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>數據分析師個人網站</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-6dznT9LidOCz2+RbGJf1hO7N8qegilx/7uh+MvZJWln9aQzG2R+RnABe1kLdk8h3q3qKj+1vRKJlIsW8b4s4sA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-zW0y33i0ouqHrjvra+ZixziXgM3uqC/5eYBbSDjV8huINoQiO7VhRvOtZ1cOZjOLanAQkiIzgjj2yFaYfzCxiA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <title>數據分析師 - 個人網站</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">數據分析師</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">主頁<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#about">關於我們</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">關於我們</a>
+                        <a class="nav-link" href="#portfolio">作品介紹</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">作品展示</a>
+                        <a class="nav-link" href="#experience">經歷</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">聯繫我們</a>
+                        <a class="nav-link" href="#contact">聯繫我們</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="masthead">
+    <!-- Header -->
+    <header id="header" class="bg-light">
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">數據分析師</div>
-                <div class="intro-lead-in">讓數據為你服務</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#">了解更多</a>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>數據分析師</h1>
+                    <p class="lead mb-0">歡迎來到我的個人網站</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/header-img.svg" alt="Header Image" class="img-fluid">
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="about" class="section">
+    <!-- About Section -->
+    <section id="about" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg
-                <div class="section-heading">
+                <div class="col-lg-6">
                     <h2>關於我們</h2>
+                    <p class="lead">我是一位數據分析師，熱愛數據分析和資料可視化。我有豐富的數據分析和處理經驗，曾經在數據科學公司擔任數據分析師，負責開發和維護多個數據分析平臺，並提供數據分析服務給客戶。我熟悉Python、SQL和R等數據分析工具和庫，對於機器學習和深度學習有著基礎的了解。</p>
+</div>
+<div class="col-lg-6">
+<img src="img/about-img.svg" alt="About Image" class="img-fluid">
+</div>
+</div>
+</div>
+</section>
+	<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-5">作品介紹</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/portfolio-1.jpg" class="card-img-top" alt="Portfolio Image">
+                    <div class="card-body">
+                        <h5 class="card-title">作品名稱 1</h5>
+                        <p class="card-text">這裡填寫簡介</p>
+                        <a href="#" class="btn btn-primary">詳細內容</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <p class="text-muted">我們是一支專業的數據分析團隊，提供數據分析、數據建模、數據視覺化等服務。</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/portfolio-2.jpg" class="card-img-top" alt="Portfolio Image">
+                    <div class="card-body">
+                        <h5 class="card-title">作品名稱 2</h5>
+                        <p class="card-text">這裡填寫簡介</p>
+                        <a href="#" class="btn btn-primary">詳細內容</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <p class="text-muted">我們有豐富的數據分析經驗，擅長使用 Python、R、SQL 等工具進行數據處理與分析。</p>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/portfolio-3.jpg" class="card-img-top" alt="Portfolio Image">
+                    <div class="card-body">
+                        <h5 class="card-title">作品名稱 3</h5>
+                        <p class="card-text">這裡填寫簡介</p>
+                        <a href="#" class="btn btn-primary">詳細內容</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/portfolio-4.jpg" class="card-img-top" alt="Portfolio Image">
+                    <div class="card-body">
+                        <h5 class="card-title">作品名稱 4</h5>
+                        <p class="card-text">這裡填寫簡介</p>
+                        <a href="#" class="btn btn-primary">詳細內容</a>
+                    </div>
+               
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/portfolio-5.jpg" class="card-img-top" alt="Portfolio Image">
+                    <div class="card-body">
+                        <h5 class="card-title">作品名稱 5</h5>
+                        <p class="card-text">這裡填寫簡介</p>
+                        <a href="#" class="btn btn-primary">詳細內容</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/portfolio-6.jpg" class="card-img-top" alt="Portfolio Image">
+                    <div class="card-body">
+                        <h5 class="card-title">作品名稱 6</h5>
+                        <p class="card-text">這裡填寫簡介</p>
+                        <a href="#" class="btn btn-primary">詳細內容</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="portfolio" class="section bg-light">
+<!-- Experience Section -->
+<section id="experience" class="py-5">
     <div class="container">
+        <h2 class="mb-5">經歷</h2>
         <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <h2>作品展示</h2>
-                </div>
+            <div class="col-lg-6">
+                <h3>數據科學公司 - 數據分析師</h3>
+                <p class="text-muted">2021年1月 - 至今</p>
+                <ul class="text-muted">
+                    <li>負責開發和維護多個數據分析平臺</li>
+                    <li>提供數據分析服務給客戶</li>
+                    <li>使用Python、SQL和R等工具和庫進行數據分析和處理</li>
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" href="#">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>作品標題</h4>
-                        <p class="text-muted">作品描述</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" href="#">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>作品標題</h4>
-                        <p class="text-muted">作品描述</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" href="#">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>作品標題</h4>
-                        <p class="text-muted">作品描述</p>
-                    </div>
-                </div>
+            <div class="col-lg-6">
+                <h3>一家公司 - 職務名稱</h3>
+                <p class="text-muted">2020年1月 - 2020年12月</p>
+                <ul class="text-muted">
+                    <li>這裡填寫職責</li>
+                    <li>這裡填寫職責</li>
+                    <li>這裡填寫職責</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="section">
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="mb-5">聯絡我</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電子郵箱</label>
+                        <input type="email" class="form-control" id="email" required>
+</div>
+<div class="form-group">
+<label for="message">留言</label>
+<textarea class="form-control" id="message" rows="5" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary">送出</button>
+</form>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">聯絡資訊</h5>
+<ul class="list-unstyled">
+<li><i class="fas fa-map-marker-alt"></i> 地址：台灣 台北市</li>
+<li><i class="fas fa-phone"></i> 電話：123-456-7890</li>
+<li><i class="fas fa-envelope"></i> 電子郵箱：example@example.com</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+	<!-- Footer Section -->
+<footer class="bg-dark text-white py-3">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="section-heading">
-                    <
-<h2>聯繫我們</h2>
-                    </div>
-                </div>
+            <div class="col-lg-6">
+                <p class="text-muted mb-0">© 2023 數據分析師 個人網站. All rights reserved.</p>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <form id="contact-form" action="#" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="姓名" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="電子郵件" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="留言內容" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">提交</button>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i>地址: 台灣</p>
-                        <p><i class="fas fa-phone"></i>電話: +886 9xxxxxxxx</p>
-                        <p><i class="fas fa-envelope"></i>電子郵件: example@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-						     <!-- Footer -->
-<footer class="bg-dark text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p class="text-center">&copy; 2023 數據分析團隊. All Rights Reserved.</p>
+            <div class="col-lg-6">
+                <p class="text-muted mb-0 text-right">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+<!-- Bootstrap core JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
