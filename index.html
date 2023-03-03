@@ -1,77 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>你的名字 - 數據分析師</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div id="branding">
-				<h1><span class="highlight">你的名字</span></h1>
-			</div>
+	<head>
+		<title>你的名字 - 數據分析師</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
 			<nav>
 				<ul>
-					<li class="current"><a href="index.html">首頁</a></li>
-					<li><a href="about.html">關於我</a></li>
-					<li><a href="contact.html">聯絡我</a></li>
+					<li><a href="#">首頁</a></li>
+					<li><a href="#">關於我</a></li>
+					<li><a href="#">作品集</a></li>
+					<li><a href="#">聯繫我</a></li>
 				</ul>
 			</nav>
-		</div>
-	</header>
-	
-	<section id="showcase">
-		<div class="container">
-			<h1>歡迎來到我的個人網頁</h1>
-			<p>我是一名數據分析師，致力於為企業提供數據分析和解決方案。</p>
-		</div>
-	</section>
-
-	<section id="services">
-		<div class="container">
-			<h1>我的服務</h1>
-			<p>我能為您提供以下服務：</p>
-			<ul>
-				<li>數據分析和建模</li>
-				<li>數據可視化</li>
-				<li>報告和演示</li>
-				<li>數據清理和處理</li>
-			</ul>
-		</div>
-	</section>
-
-	<section id="about">
-		<div class="container">
-			<h1>關於我</h1>
-			<p>我是一名數據分析師，具有豐富的數據分析和建模經驗。我熟悉Python，R和SQL等常見的數據分析工具，並擅於數據可視化和報告方面的工作。我非常熱愛數據分析，並希望能夠為您的企業提供幫助。</p>
-</div>
-</section>
-	<section id="contact">
-	<div class="container">
-		<h1>聯絡我</h1>
-		<form>
-			<div class="form-group">
-				<label>姓名</label>
-				<input type="text" placeholder="請輸入您的姓名">
+			<div class="hero">
+				<div class="hero-text">
+					<h1>你的名字</h1>
+					<h2>數據分析師</h2>
+				</div>
 			</div>
-			<div class="form-group">
-				<label>電子郵件</label>
-				<input type="email" placeholder="請輸入您的電子郵件">
+		</header>
+		<main>
+			<section class="about">
+				<div class="container">
+					<div class="about-text">
+						<h2>關於我</h2>
+						<p>我是一位數據分析師，擅長使用Python和R進行數據分析和可視化。我擁有豐富的數據處理經驗，曾經在多個項目中使用機器學習和人工智慧技術進行數據建模和預測。我對數據科學充滿熱情，熟悉各種數據庫和數據分析工具，並且善於為客戶提供解決方案。</p>
+					</div>
+					<div class="about-image">
+						<img src="img/about.jpg" alt="關於我">
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="container">
+				<h2>我的服務</h2>
+				<div class="services-container">
+					<div class="service">
+						<i class="fas fa-chart-bar"></i>
+						<h3>數據分析</h3>
+						<p>使用Python和R進行數據分析和可視化。</p>
+					</div>
+					<div class="service">
+						<i class="fas fa-cog"></i>
+						<h3>數據處理</h3>
+						<p>擁有豐富的數據處理經驗，能夠將大量數據進行處理和清洗。</p>
+					</div>
+					<div class="service">
+						<i class="fas fa-rocket"></i>
+						<h3>機器學習</h3>
+						<p>使用機器學習和人工智慧技術進行數據建模和預測。</p>
+					</div>
+				</div>
 			</div>
-			<div class="form-group">
-				<label>消息</label>
-				<textarea placeholder="請輸入您的消息"></textarea>
+		</section>
+		<section class="portfolio">
+			<div class="container">
+				<h2>我的作品</h2>
+				<div class="portfolio-container">
+					<div class="portfolio-item">
+						<img src="img/portfolio-1.jpg" alt="作品 1">
+						<h3>作品 1</h3>
+						<p>這是我的作品 1 的描述。</p>
+					</div>
+					<div class="portfolio-item">
+						<img src="img/portfolio-2.jpg" alt="作品 2">
+						<h3>作品 2</h3>
+						<p>這是我的作品 2 的描述。</p>
+					</div>
+					<div class="portfolio-item">
+						<img src="img/portfolio-3.jpg" alt="作品 3">
+						<h3>作品 3</h3>
+						<p>這是我的作品 3 的描述。</p>
+					</div>
+				</div>
 			</div>
-			<button type="submit" class="button_1">發送</button>
-		</form>
-	</div>
-</section>
-
-<footer>
-	<div class="container">
-		<p>&copy; 2023 - 你的名字</p>
-	</div>
-</footer>
+		</section>
+		<section class="contact">
+			<div class="container">
+				<h2>聯繫我</h2>
+				<form>
+					<label for="name">姓名</label>
+					<input type="text" id="name" name="name" required>
+					<label for="email">電子郵件</label>
+					<input type="email" id="email" name="email" required>
+					<label for="message">信息</label>
+					<textarea id="message" name="message" required></textarea>
+					<button type="submit">發送信息</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer-text">
+				<p>&copy; 2023 你的名字</p>
+			</div>
+			<div class="footer-social">
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			
+			</div>
+		</div>
+	</footer>
+	<!-- 頁面載入後載入自定義的 JavaScript -->
+	<script src="js/main.js"></script>
 </body>
-</html>
