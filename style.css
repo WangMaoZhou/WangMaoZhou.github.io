@@ -1,0 +1,147 @@
+/* Global */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+}
+header {
+	background: #333;
+	color: #fff;
+	padding-top: 10px;
+	min-height: 70px;
+	border-bottom: #dc143c 3px solid;
+}
+header a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header ul {
+	float: right;
+	margin-top: 25px;
+}
+header li {
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+#showcase {
+	background: url('../img/showcase.jpg') no-repeat center center;
+	background-size: cover;
+	min-height: 500px;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#showcase h1 {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+#showcase p {
+	font-size: 20px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+.button_1 {
+	font-size: 18px;
+	background: #dc143c;
+	color: #fff;
+	padding: 10px 20px;
+	margin-top: 20px
+}
+.button_1:hover {
+background: #c1133c;
+cursor: pointer;
+}
+section {
+padding: 60px 0;
+}
+.container {
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+h1 {
+font-size: 36px;
+margin-bottom: 30px;
+}
+h2 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+.about-info {
+display: flex;
+flex-wrap: wrap;
+}
+.about-info p {
+flex: 1;
+padding-right: 10px;
+}
+.about-image img {
+width: 100%;
+}
+.services-box {
+float: left;
+width: 25%;
+text-align: center;
+margin-bottom: 30px;
+}
+.services-box i {
+font-size: 50px;
+margin-bottom: 20px;
+}
+.services-box h3 {
+font-size: 18px;
+margin-bottom: 20px;
+}
+.services-box p {
+font-size: 14px;
+line-height: 1.8;
+}
+.contact-form {
+width: 50%;
+margin: auto;
+}
+.form-group {
+margin-bottom: 20px;
+}
+.form-group label {
+display: block;
+font-size: 22px;
+margin-bottom: 10px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+padding: 10px;
+width: 100%;
+border: #ccc 1px solid;
+border-radius: 5px;
+}
+.form-group textarea {
+height: 200px;
+}
+.button_1 {
+font-size: 18px;
+background: #dc143c;
+color: #fff;
+padding: 10px 20px;
+margin-top: 20px;
+}
+.button_1:hover {
+background: #c1133c;
+cursor: pointer;
+}
+footer {
+background: #333;
+color: #fff;
+text-align: center;
+padding: 30px;
+margin-top: 30px;
+}
