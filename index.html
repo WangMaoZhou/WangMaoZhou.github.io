@@ -2,254 +2,157 @@
 <html>
 
 <head>
-    <title>我的数据科学家个人网站</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>MZ Website</title>
+    <!-- 引用 Bootstrap 和自定義的 CSS 樣式 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
-    <style>
-        body {
-            background-color: #000;
-            color: #0ff;
-            font-family: 'Helvetica Neue', sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #0ff;
-            font-weight: bold;
-            margin: 0;
-            padding: 0;
-        }
-
-        section {
-            padding: 50px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-        }
-
-        .card {
-            background-color: #222;
-            border: none;
-            border-radius: 0;
-            color: #0ff;
-            margin-bottom: 30px;
-            padding: 30px;
-        }
-
-        .card-header {
-            border-bottom: 1px solid #333;
-            font-size: 24px;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-
-        .card-body {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        .card-body ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .card-body ul li {
-            margin-bottom: 10px;
-            padding-left: 30px;
-            position: relative;
-        }
-
-        .card-body ul li:before {
-            content: '\f0da';
-            display: inline-block;
-            font-family: 'Font Awesome 5 Free';
-            font-size: 16px;
-            font-weight: 900;
-            left: 0;
-            position: absolute;
-            top: 1px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 0px 0;
-        }
-
-        footer a {
-            color: #fff;
-        }
-
-        .social-icons {
-            list-style: none;
-            margin: 0;
-            margin-left: 20px;
-            float: right;
-            padding: 10px 0;
-            text-align: center;
-            vertical-align: top;
-        }
-
-        .social-icons li {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        .social-icons li a {
-            display: inline-block;
-            font-size: 24px;
-            line-height: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <!-- 引用 Font Awesome 圖標庫 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">我的数据科学家个人网站</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">关于我</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">我的服务</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">我的作品</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">联系我</a>
-                    </li>
-                </ul>
+    <header>
+        <h1> MAO-ZHOU WANG</h1>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT ME</a>
+            <a href="#">PROJECT</a>
+        </nav>
+    </header>
+    <section class="about-me">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/raccoon.jpg" alt="Profile Picture" class="profile-picture">
             </div>
-        </div>
-    </nav>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>John Doe</h1>
-                    <h3>数据科学家</h3>
-                    <p>作为一名数据科学家，我通过分析复杂的数据集并提取有意义的见解来帮助企业做出数据驱动的决策。通过统计分析、机器学习和数据可视化的经验，我能够提供有力的见解，推动业务增长。</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/500x500" alt="John Doe" class="img-fluid rounded-circle">
-                </div>
+            <div class="col-md-6">
+                <h2>ABOUT ME</h2>
+                <p>　目前在零售百貨業擔任數據分析師，藉由視覺化分析提供具有商業價值的內外部資訊，以及建立商業指標，以利商業決策的推動；建置自動化與視覺化報表來減少工作流程；亦與跨單位及跨公司合作針對門市、銷售、商品、營運和會員等深度探勘，藉由統計和機器學習等提出未發覺以及有商業價值的分析。</p>
             </div>
-        </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <h2>关于我</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>我是一名拥有5年以上经验的数据科学家。我曾与金融、医疗保健和零售等各种行业合作，并能够适应每个企业的独特需求。</p>
-                    <p>我的专业技能包括：</p>
-                    <ul>
-                        <li>数据分析和可视化</li>
-                        <li>统计建模和分析</li>
-                        <li>机器学习和预测建模</li>
-                        <li>数据库管理和数据仓库</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/500x500" alt="关于我" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services">
-        <div class="container">
-            <h2>我的服务</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            数据分析
-                        </div>
-                        <div class="card-body">
-                            <p>我可以通过分析复杂的数据集并提取有意义的见解来帮助您做出更好的决策。</p>
-                            <p><a href="#">查看案例研究</a></p>
-                        </div>
+            <div class="col-md-3">
+                <h2>SKILL</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="skills">
+
+                            <li>
+                                <span>Python</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Ms sql</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Tableau</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Hadoop</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            机器学习
-                        </div>
-                        <div class="card-body">
-                            <p>我可以利用机器学习算法来构建预测模型，帮助您做出更准确的预测。</p>
-                            <p><a href="#">查看案例研究</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            数据可视化
-                        </div>
-                        <div class="card-body">
-                            <p>我可以利用数据可视化工具来展示数据，并从中发现隐藏的模式和见解。</p>
-                            <p><a href="#">查看案例研究</a></p>
-                        </div>
+                                        <div class="col-md-6">
+                        <ul class="skills">
+
+                            <li>
+                                <span>Python</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Ms sql</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Tableau</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Hadoop</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="portfolio">
-        <div class="container">
-            <h2>我的作品</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            营销活动分析
-                        </div>
-                        <div class="card-body">
-                            <p>通过统计分析和数据可视化，我帮助一家营销机构分析其活动的有效性，并确定改进的领域。</p>
-                            <p><a href="#">查看案例研究</a></p>
-                        </div>
+
+<section id="services">
+    <div class="container">
+        <h2>PROJECT</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        數據分析
+                    </div>
+                    <div class="card-body">
+                        <p>我可以通過分析複雜的數據集並提出有意義的見解來幫助您做出更好的決策。</p>
+                        <p><a href="#">了解更多</a></p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            客户细分
-                        </div>
-                        <div class="card-body">
-                            <p>通过使用机器学习技术，我帮助一家电子商务公司对其客户群体进行细分，并制定有针对性的营销活动。</p>
-                            <p><a href="#">查看案例研究</a></p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        機器學習
+                    </div>
+                    <div class="card-body">
+                        <p>我可以利用機器學習算法來構建預測模型，幫助您做出更準確的預測。</p>
+                        <p><a href="#">了解更多</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        視覺化分析
+                    </div>
+                    <div class="card-body">
+                        <p>我可以利用數據可視化工具來展示數據，並從中發現隱藏的模型和視圖。</p>
+                        <p><a href="#">了解更多</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        資料庫管理
+                    </div>
+                    <div class="card-body">
+                        <p>我可以協助您管理和維護資料庫，確保您的數據庫運作順暢。</p>
+                        <p><a href="#">了解更多</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+
     <footer>
         <div class="container">
-            <p>版权所有 &copy; 2023 John Doe</p>
-            <ul class="social-icons ml-auto">
+            <p>版權所有 &copy; 2023 MZ WANG</p>
+            <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -257,10 +160,6 @@
             </ul>
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
