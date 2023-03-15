@@ -1,165 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 
 <head>
     <meta charset="UTF-8">
-    <title>MZ Website</title>
-    <!-- 引用 Bootstrap 和自定義的 CSS 樣式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Data Analyst</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <!-- 引用 Font Awesome 圖標庫 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 
 <body>
     <header>
-        <h1> MAO-ZHOU WANG</h1>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT ME</a>
-            <a href="#">PROJECT</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">MAO-ZHOU WANG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">簡介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">作品集</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section class="about-me">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="assets/raccoon.jpg" alt="Profile Picture" class="profile-picture">
-            </div>
-            <div class="col-md-6">
-                <h2>ABOUT ME</h2>
-                <p>　目前在零售百貨業擔任數據分析師，藉由視覺化分析提供具有商業價值的內外部資訊，以及建立商業指標，以利商業決策的推動；建置自動化與視覺化報表來減少工作流程；亦與跨單位及跨公司合作針對門市、銷售、商品、營運和會員等深度探勘，藉由統計和機器學習等提出未發覺以及有商業價值的分析。</p>
-            </div>
-            <div class="col-md-3">
-                <h2>SKILL</h2>
+    <main>
+        <section class="about-me">
+            <div class="container">
                 <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/S__418226203.jpg" alt="Profile Picture" class="profile-picture img-fluid">
+                    </div>
                     <div class="col-md-6">
-                        <ul class="skills">
-
-                            <li>
-                                <span>Python</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 80%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Ms sql</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Tableau</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 60%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Hadoop</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-                            </li>
-                        </ul>
+                        <h2>簡介</h2>
+                        <p>目前在零售百貨業擔任數據分析師，藉由視覺化分析提供具有商業價值的內外部資訊，以及建立商業指標，以利商業決策的推動；建置自動化與視覺化報表來減少工作流程；亦與跨單位及跨公司合作針對門市、銷售、商品、營運和會員等深度探勘，藉由統計和機器學習等提出未發覺以及有商業價值的分析。</p>
                     </div>
-                                        <div class="col-md-6">
-                        <ul class="skills">
+                    <div class="col-md-3">
+                        <h2>評估</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="skills">
 
-                            <li>
-                                <span>Python</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 80%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Ms sql</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Tableau</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 60%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Hadoop</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-                            </li>
-                        </ul>
+                                    <li>
+                                        <span>Python</span>
+                                        <div class="progress">
+                                            <div class="progress-bar                                         " style="width: 70%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>R</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 40%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>MS SQL</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 90%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Hadoop(IMPALA)</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 80%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Hadoop(HIVE)</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 70%;"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="skills">
+
+                                    <li>
+                                        <span>Tableau</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 90%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Power BI</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 60%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>SSRS</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 80%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>My SQL</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 30%;"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>HTML/CSS</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 30%;"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-<section id="services">
-    <div class="container">
-        <h2>PROJECT</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        數據分析
+        <section id="project">
+            <div class="container">
+                <h2>專案</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                數據分析
+                            </div>
+                            <div class="card-body">
+                                <p>我可以通過分析複雜的數據集並提出有意義的見解來幫助您做出更好的決策。</p>
+                                <p><a href="#">了解更多</a></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p>我可以通過分析複雜的數據集並提出有意義的見解來幫助您做出更好的決策。</p>
-                        <p><a href="#">了解更多</a></p>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                機器學習
+                            </div>
+                            <div class="card-body">
+                                <p>我可以利用機器學習算法來構建預測模型，幫助您做出更準確的預測。</p>
+                                <p><a href="#">了解更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                視覺化分析
+                            </div>
+                            <div class="card-body">
+                                <p>我可以利用數據可視化工具來展示數據，並從中發現隱藏的模型和視圖。</p>
+                                <p><a href="#">了解更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                資料庫管理
+                            </div>
+                            <div class="card-body">
+                                <p>我可以協助您管理和維護資料庫，確保您的數據庫運作順暢。</p>
+                                <p><a href="#">了解更多</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        機器學習
-                    </div>
-                    <div class="card-body">
-                        <p>我可以利用機器學習算法來構建預測模型，幫助您做出更準確的預測。</p>
-                        <p><a href="#">了解更多</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        視覺化分析
-                    </div>
-                    <div class="card-body">
-                        <p>我可以利用數據可視化工具來展示數據，並從中發現隱藏的模型和視圖。</p>
-                        <p><a href="#">了解更多</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-header">
-                        資料庫管理
-                    </div>
-                    <div class="card-body">
-                        <p>我可以協助您管理和維護資料庫，確保您的數據庫運作順暢。</p>
-                        <p><a href="#">了解更多</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-
-
-    <footer>
-        <div class="container">
-            <p>版權所有 &copy; 2023 MZ WANG</p>
-            <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
+        <footer>
+            <div class="container">
+                <p>版權所有 &copy; 2023 MZ WANG</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mao-zhou-wang-651b60210/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/WangMaoZhou"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
 </body>
 
 </html>
