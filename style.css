@@ -1,212 +1,54 @@
-    <style > <meta name="viewport"content="width=device-width, initial-scale=1" > body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
+/* 標題的樣式 */
+.navbar-brand {
+  font-weight: bold;
+}
 
-    }
+/* 所有選項的樣式 */
+.nav-link {
+  font-weight: bold;
+  color: #fff !important;
+}
 
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 3% ;
-        /* 調整 header 的內邊距 */
-        text-align: center;
-        height: 50px;
-        /* 調整 header 的高度 */
-    }
+/* 作品集下拉選單的樣式 */
+.dropdown-menu {
+  background-color: #101a0e;
+}
 
-    header h1 {
-        margin: 0 0 0 3%;
-        float: left;
-        font-size: 25px;
-        padding: 0.5%;
-        /* 調整 h1 的內邊距 */
-    }
+/* 作品集下拉選單中每個選項的樣式 */
+.dropdown-item {
+  font-weight: bold;
+  color: #fff !important;
+}
 
-    nav {
-        background-color: #333;
-        padding: 5px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        float: right;
-        margin-right: 20px;
-        /* 調整 nav 的右邊距 */
-    }
+/* 滑鼠移動至作品集時，顯示下拉選單 */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.navbar-custom {
+  background-color:#111711 ;
+}
+/* 調整下拉選單的觸碰反白顏色 */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #2158aa; /* 這裡可以改成您想要的顏色 */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0d352d;
+  color: white;
+  font-weight: bold;
+}
 
-    nav a {
-        text-decoration: none;
-        padding: 5px;
-        color: #fff;
-    }
+footer a {
+  color: white;
+}
 
-
-
-    nav a:hover {
-        color: gainsboro;
-        text-decoration: none;
-    }
-
-
-
-    .about-me {
-        padding: 10px;
-        height: 50%;
-        background-color: gainsboro;
-
-
-    }
-
-    .about-me p {
-        text-align: left;
-        height: 50%;
-    }
-
-    .about-me h2 {
-        text-align: center;
-        font-size: 20px;
-        border-radius: 5px;
-        background-color: #333;
-        color: #fff;
-        /* 設置底色 */
-        padding: 5px;
-        /* 添加內邊距 */
-        /* display: inline-block; /* 讓元素只佔用必要的寬度 */
-
-        font-family: "Microsoft JhengHei", sans-serif;
-        font-weight: bold;
-    }
-
-
-
-
-    .profile-picture {
-        object-fit: cover;
-        width: 200px;
-        height: 200px;
-        border-radius: 10%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        display: block;
-        padding: 10px;
-        margin: 0 auto;
-    }
-
-    .skills {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    .skills li {
-        position: relative;
-    }
-
-    .skills span {
-        display: inline-block;
-        width: 80px;
-        font-weight: bold;
-        text-align: center;
-        font-size: 10px;
-        margin-right: 10px;
-    }
-
-    .progress {
-        height: 6px;
-        background-color: black;
-        border-radius: 10px;
-        overflow: hidden;
-        width: 110px;
-    }
-
-    .progress-bar {
-        height: 100%;
-        background-color: darkorange;
-        transition: width 1s ease-in-out;
-    }
-
-
-    .col-md-3 {
-        width: 50%;
-        float: left;
-    }
-
-    .container {
-        max-width: 1300px;
-        margin: 0 auto;
-        overflow: auto;
-        width: 100%;
-    }
-
-    section {
-        padding: 5px;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 0.5%;
-
-        bottom: 0;
-        width: 100%;
-    }
-
-
-    .social-icons {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        float: right;
-    }
-
-    .social-icons li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    .social-icons li a {
-        color: #fff;
-        font-size: 20px;
-    }
-
-    footer p {
-        margin: 0;
-        float: left;
-    }
-
-    footer ul {
-        margin: 0;
-        float: right;
-    }
-
-    .card {
-
-
-        margin-bottom: 30px;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-header {
-        background-color: #333;
-
-        color: #fff;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .card-body {
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: justify;
-    }
-
-
-    #project {
-        padding: 1% 0;
-        background-color: #f8f8f8;
-    }
-
-
-    </style >
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
