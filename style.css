@@ -1,54 +1,317 @@
+* {
+ font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+
 /* 標題的樣式 */
 .navbar-brand {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* 所有選項的樣式 */
 .nav-link {
-  font-weight: bold;
-  color: #fff !important;
+    font-weight: bold;
+    color: #fff !important;
 }
 
 /* 作品集下拉選單的樣式 */
 .dropdown-menu {
-  background-color: #101a0e;
+    background-color: #161B22;
 }
 
 /* 作品集下拉選單中每個選項的樣式 */
 .dropdown-item {
-  font-weight: bold;
-  color: #fff !important;
+    font-weight: bold;
+    color: #fff !important;
 }
 
 /* 滑鼠移動至作品集時，顯示下拉選單 */
 .nav-item:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
+
 .navbar-custom {
-  background-color:#111711 ;
+    background-color: #161B22;
 }
+
 /* 調整下拉選單的觸碰反白顏色 */
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background-color: #2158aa; /* 這裡可以改成您想要的顏色 */
+    background-color: #2158aa;
+    /* 這裡可以改成您想要的顏色 */
 }
+
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #0d352d;
-  color: white;
-  font-weight: bold;
+
+    bottom: 0;
+    width: 100%;
+    background-color: #161B22;
+    color: white;
+    font-weight: bold;
+
 }
 
 footer a {
-  color: white;
+    color: white;
 }
 
 @media (min-width: 768px) {
-  footer {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+body {
+    background-color: #010409;
+}
+
+/* 左側和右側標題樣式 */
+.left-section h2,
+.right-section h2 {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    background-color: #0D1117;
+    /* 背景顏色 */
+    color: #fff;
+    /* 文字顏色 */
+    font-weight: bold;
+    /* 字體粗細 */
+    padding: 10px;
+    /* 內邊距 */
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.row {
+    margin-top: 5px;
+    margin-left: 0.5px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+
+/* 左側頭像樣式 */
+.left-section img {
+    max-width: 100%;
+    /* 圖片寬度最大為100% */
+    height: auto;
+    /* 自動維持比例 */
+    /* 設定圖片寬度為 200px */
+    width: 250px;
+    /* 設定圖片高度為 200px */
+    height: 250px;
+    /* 設定水平居中 */
+    margin: 0 auto;
+    /* 設定垂直居中 */
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.custom-bar {
+    background-color: #39D353;
+}
+
+.custom-subbar {
+    background-color: #216E39;
+}
+
+/* 能量條 */
+.progress {
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+/* 能量條文字 */
+.skill-name {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    width: 80px;
+    color: white;
+}
+
+/* 新增類別 */
+.skill-indicator-group {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* 小於等於 768px 寬度的螢幕 */
+@media screen and (max-width: 768px) {
+    .skill-indicators {
+        display: block;
+    }
+
+    .skill-indicator {
+        margin-bottom: 5px;
+    }
+
+    .skill-name {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .progress {
+        height: 17px;
+        margin-bottom: 5px;
+        border-radius: 50px;
+    }
+}
+
+/* 大於 768px 寬度的螢幕 */
+@media screen and (min-width: 768px) {
+    .skill-indicators {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .skill-indicator {
+        margin-right: 20px;
+    }
+
+    .skill-name {
+        width: 80px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    .progress {
+        height: 10px;
+        margin-bottom: 5px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
+}
+
+.timeline-item {
+    position: relative;
+    padding: 15px;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22.5px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #30363D;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -17.5px;
+    transform: translateY(-50%);
+    width: 5px;
+    height: calc(100% - 30px);
+    background-color: #30363D;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item h3 {
+    font-size: 16px;
+    margin: 0 0 5x;
+    color: white;
+}
+
+.timeline-item h4 {
+    font-size: 16px;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.timeline-item p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: white;
+}
+
+.about_me p {
+    font-size: 16px;
+    color: white;
+        font-weight: bold;
+    /* 字體粗細 */
+}
+
+
+/* 專案卡片區域樣式 */
+.project-cards {
+    display: flex;
+    /* 使用彈性盒子顯示*/
+    flex-wrap: wrap;
+    /* 換行 */
+    justify-content: space-between;
+    /* 等距排列 */
+}
+
+/* 專案卡片樣式 */
+.card {
+    background-color: #fff;
+    /*  背景顏色 */
+    border: none;
+    /* 無邊框 */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    /* 陰影 */
+    margin-bottom: 20px;
+    /* 底邊距 */
+    max-width: 48%;
+    /* 最大寬度為48% */
+    width: 100%;
+    /* 寬度為100% */
+}
+
+/* 專案卡片標題樣式*/
+.card-title {
+    font-weight: bold;
+    /* 字體粗細 */
+}
+
+/* 專案卡片說明樣式 */
+.card-text {
+    color: #555;
+    /* 文字顏色 */
+}
+
+/* 媒體查詢樣式 */
+@media screen and (max-width: 768px) {
+    .project-cards {
+        flex-direction: column;
+        /* 垂直排列 */
+    }
+
+    .card {
+        max-width: 100%;
+        /* 最大寬度為100% */
+    }
+}
+
+
 }
