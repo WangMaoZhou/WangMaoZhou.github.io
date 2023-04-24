@@ -62,8 +62,6 @@ footer a {
     }
 }
 
-
-
 body {
     background-color: #010409;
 }
@@ -131,6 +129,9 @@ body {
     margin-right: 10px;
     width: 80px;
     color: white;
+}
+.skill-indicators {
+  overflow: auto;
 }
 
 /* 新增類別 */
@@ -315,3 +316,16 @@ body {
 
 
 }
+
+@media (max-width: 576px) {
+  /* 調整手機版面 */
+}
+
+@media (min-width: 576px) {
+  /* 調整平板版面 */
+}
+
+@media (min-width: 768px) {
+  /* 調整桌機版面 */
+}
+
