@@ -27,7 +27,7 @@
 /* 滑鼠移動至作品集時，顯示下拉選單 */
 .nav-item:hover .dropdown-menu {
     display: block;
-    
+
 }
 
 .navbar-custom {
@@ -279,7 +279,7 @@ body {
 
 /* 專案卡片樣式 */
 .card {
-    background-color: #444654;
+    background-color: #121D2F;
     /*  背景顏色 */
     border: none;
     /* 無邊框 */
@@ -287,15 +287,19 @@ body {
     /* 陰影 */
     margin-bottom: 20px;
     /* 底邊距 */
-    max-width: 48%;
+    max-width: 100%;
     /* 最大寬度為48% */
     width: 100%;
     /* 寬度為100% */
+    margin-top :10px;
+    border: 1px solid #214981 ;
+    border-radius: 8px
 }
 
 /* 專案卡片標題樣式*/
 .card-title {
     font-weight: bold;
+    color: white;
     /* 字體粗細 */
 
 }
@@ -313,13 +317,13 @@ body {
     float: right;
     /* 讓 a 元素靠右 */
     text-decoration: none;
-        font-weight: bold;
-
+    font-weight: bold;
+    margin: 0px 0px 0px 5px;
 }
 
 .card-body a:hover {
-  background-color: gray;
-border-radius: 5px;
+    background-color: gray;
+    border-radius: 5px;
     /* 調整顏色 */
 
 }
@@ -358,19 +362,23 @@ border-radius: 5px;
 
 /* 自訂滑桿樣式 */
 ::-webkit-scrollbar {
-  width: 4px;  /* 設定滑桿寬度 */
+    width: 4px;
+    /* 設定滑桿寬度 */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: black;  /* 設定滑桿背景顏色 */
+    background-color: black;
+    /* 設定滑桿背景顏色 */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888;  /* 設定滑桿顏色 */
-  border-radius: 5px;  /* 設定滑桿邊角半徑 */
+    background-color: #888;
+    /* 設定滑桿顏色 */
+    border-radius: 5px;
+    /* 設定滑桿邊角半徑 */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555;  /* 設定滑桿觸碰顏色 */
+    background-color: #555;
+    /* 設定滑桿觸碰顏色 */
 }
-
