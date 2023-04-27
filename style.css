@@ -94,19 +94,21 @@ body {
 .left-section img {
     max-width: 100%;
     /* 圖片寬度最大為100% */
-    height: auto;
+    height: 300px;
     /* 自動維持比例 */
     /* 設定圖片寬度為 200px */
     width: 250px;
     /* 設定圖片高度為 200px */
-    height: 250px;
+    height: 300px;
     /* 設定水平居中 */
     margin: 0 auto;
     /* 設定垂直居中 */
     display: block;
     vertical-align: middle;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #30363D;
+    border-radius: 8px
 }
 
 .custom-bar {
